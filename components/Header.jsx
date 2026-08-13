@@ -1,5 +1,6 @@
 import Nav from "@/components/Nav";
 import { Button } from "@/components/ui/button";
+import MobileNav from "@/components/ui/MobileNav";
 import Link from "next/link";
 
 function Header() {
@@ -18,6 +19,9 @@ function Header() {
           <Link href="/contact">
             <Button>Why me?</Button>
           </Link>
+        </div>
+        <div className="xl:hidden">
+          <MobileNav />
         </div>
       </div>
     </header>
