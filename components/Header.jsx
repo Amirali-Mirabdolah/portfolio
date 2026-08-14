@@ -10,7 +10,7 @@ function Header() {
         {/* logo */}
         <Link href="/">
           <h1 className="text-4xl font-semibold">
-            Luce <span className="text-accent">.</span>
+            Amirali<span className="text-accent">.</span>
           </h1>
         </Link>
 
