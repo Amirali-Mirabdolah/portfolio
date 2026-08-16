@@ -17,7 +17,7 @@ function Photo() {
           <Image
             src="/assets/amirali-e.png"
             property="true"
-            quality={100}
+            quality={[100, 75]}
             fill
             alt="image"
             className="object-cover object-top"

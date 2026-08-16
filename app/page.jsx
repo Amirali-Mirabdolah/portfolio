@@ -1,6 +1,6 @@
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
-import Stars from "@/components/Stars";
+import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
@@ -45,8 +45,8 @@ function page() {
             <Photo />
           </div>
         </div>
-        <Stars />
       </div>
+      <Stats />
     </section>
   );
 }
