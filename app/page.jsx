@@ -17,7 +17,7 @@ function page() {
               <span className="text-accent">Seyed</span>{" "}
               <span>Amirali Mirabdolah</span>
             </h1>
-            <p className="max-w-[500px] inline-flex mb-9 text-white/80">
+            <p className="max-w-125 inline-flex mb-9 text-white/80">
               I'm a Front-End Developer with +2 years of experience building web
               applications. I mainly work with React and Next.js, and I'm always
               learning and improving my skills to keep up with new technologies

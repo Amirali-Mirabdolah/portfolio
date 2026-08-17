@@ -18,6 +18,14 @@
   padding-inline: 15px;
 }
 
+@utility text-outline {
+  -webkit-text-stroke: 1px #ffffff;
+}
+
+@utility text-outline-hover {
+  -webkit-text-stroke: 1px #00ff99;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
