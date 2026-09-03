@@ -5,7 +5,7 @@ import CountUp from "react-countup";
 const stats = [
   { num: 2, text: "Years of Experience" },
   { num: 5, text: "Projects Completed" },
-  { num: 10, text: "Core Technologies" },
+  { num: 8, text: "Core Technologies" },
   { num: 200, text: "Code Commits" },
 ];
 
@@ -18,8 +18,11 @@ function Stats() {
             return (
               <div
                 key={index}
-                className="flex-1 flex gap-4 items-center justify-between min-w-[250px] sm:justify-center xl:justify-start"
+                className="flex-1 flex gap-4 items-center justify-between min-w-62.5 sm:justify-center xl:justify-start"
               >
+                <p className="text-4xl xl:text-6xl font-extrabold">
+                  {item.text === "Code Commits" && "+"}
+                </p>
                 <CountUp
                   className="text-4xl xl:text-6xl font-extrabold"
                   end={item.num}
