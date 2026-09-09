@@ -21,10 +21,10 @@ const services = [
   },
   {
     num: "03",
-    title: "Learning Full-Stack Development",
+    title: "AI-Powered Development",
     description:
-      "Currently expanding my backend skills with Node.js and Express, with the goal of becoming a well-rounded Full-Stack Developer.",
-    href: "",
+      "Trained through a hands-on bootcamp on LLMs and AI coding agents, including Cursor, Codex, ChatGPT, and GitHub Copilot. I have also applied these tools in practical projects and built portfolio work with AI-assisted development.",
+    href: "https://starcoach.ir/certificate/STC20264008",
   },
 ];
 
