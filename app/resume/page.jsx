@@ -19,7 +19,7 @@ import {
   FaReact,
 } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
-// import MaterialUiIcon from "@/components/MaterialUiIcon";
+import { calculateAge } from "@/lib/calculateAge";
 
 const about = {
   title: "About Me",
@@ -41,6 +41,10 @@ const about = {
     {
       fieldName: "Nationality",
       fieldValue: "Iranian",
+    },
+    {
+      fieldName: "Age",
+      fieldValue: calculateAge("2002"),
     },
   ],
 };
@@ -253,9 +257,27 @@ function page() {
 
             <TabsContent
               value="about"
-              className="w-full"
+              className="w-full text-center xl:text-left"
             >
-              about
+              <div className="flex flex-col gap-7.5">
+                <h3 className="text-4xl font-bold">{about.title}</h3>
+                <p className="max-w-150 text-white/60 mx-auto xl:mx-0">
+                  {about.description}
+                </p>
+                <ul className="grid grid-cols-1 xl:grid-cols-2 max-w-195 gap-y-6 mx-auto xl:mx-0">
+                  {about.info.map((item, index) => {
+                    return (
+                      <li
+                        key={index}
+                        className="flex items-center justify-center xl:justify-start gap-3"
+                      >
+                        <span className="text-white/60">{item.fieldName}</span>
+                        <span className="text-xl">{item.fieldValue}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
             </TabsContent>
           </div>
         </Tabs>
