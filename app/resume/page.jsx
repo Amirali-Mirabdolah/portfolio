@@ -46,6 +46,10 @@ const about = {
       fieldName: "Age",
       fieldValue: calculateAge("2002"),
     },
+    {
+      fieldName: "Military Service Status",
+      fieldValue: "Educational Exemption",
+    },
   ],
 };
 

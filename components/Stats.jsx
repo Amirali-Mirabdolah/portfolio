@@ -21,7 +21,10 @@ function Stats() {
                 className="flex-1 flex gap-4 items-center justify-between min-w-62.5 sm:justify-center xl:justify-start"
               >
                 <p className="text-4xl xl:text-6xl font-extrabold">
-                  {item.text === "Code Commits" && "+"}
+                  {item.text === "Code Commits" ||
+                  item.text === "Years of Experience"
+                    ? "+"
+                    : ""}
                 </p>
                 <CountUp
                   className="text-4xl xl:text-6xl font-extrabold"
