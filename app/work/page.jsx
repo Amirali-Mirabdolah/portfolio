@@ -94,7 +94,7 @@ const projects = [
       { name: "Next.js" },
       { name: "Tailwind CSS" },
     ],
-    image: "/assets/work/zinamaplus.png",
+    image: "/assets/work/zinamaplusp.png",
     live: "https://zinama-plus.vercel.app/",
     github: "https://github.com/Amirali-Mirabdolah/zinama-plus",
     isCompleted: true,
@@ -223,6 +223,13 @@ function page() {
                   >
                     <div className="h-115 relative group flex justify-center items-center bg-pink-50/20">
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                      {project.isVibeCoding && (
+                        <div className="absolute top-0 left-0 z-30 bg-accent text-primary px-2 rounded-xl">
+                          <p className="text-sm tracking-tighter">
+                            ✦ AI Assisted
+                          </p>
+                        </div>
+                      )}
                       <div className="relative h-full w-full">
                         <Image
                           src={project.image}
