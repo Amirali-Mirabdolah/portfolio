@@ -13,6 +13,7 @@ import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Image from "next/image";
+import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 const projects = [
   {
@@ -211,7 +212,7 @@ function page() {
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
-              className="xl:h-130 mb-12"
+              className="xl:h-130 mb-12 rounded-xl"
               onSlideChange={handleSlideChange}
             >
               {projects.map((project, index) => {
@@ -221,19 +222,23 @@ function page() {
                     key={index}
                   >
                     <div className="h-115 relative group flex justify-center items-center bg-pink-50/20">
-                      <div></div>
+                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       <div className="relative h-full w-full">
                         <Image
                           src={project.image}
                           fill
                           alt={project.title}
-                          className="object-contain rounded-xl"
+                          className="object-cover"
                         />
                       </div>
                     </div>
                   </SwiperSlide>
                 );
               })}
+              <WorkSliderBtns
+                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
+                btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] size-[44px] flex justify-center items-center transition-all"
+              />
             </Swiper>
           </div>
         </div>
