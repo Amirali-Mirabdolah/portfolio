@@ -221,7 +221,7 @@ function Page() {
                     className="w-full"
                     key={index}
                   >
-                    <div className="h-115 relative group flex justify-center items-center bg-pink-50/20">
+                    <div className="relative h-115 w-full group flex justify-center items-center bg-pink-50/20">
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       {project.isVibeCoding && (
                         <div className="absolute top-0 left-0 z-30 bg-accent text-primary px-2 rounded-xl">
@@ -230,14 +230,13 @@ function Page() {
                           </p>
                         </div>
                       )}
-                      <div className="relative h-full w-full">
-                        <Image
-                          src={project.image}
-                          fill
-                          alt={project.title}
-                          className="object-cover"
-                        />
-                      </div>
+                      <Image
+                        src={project.image}
+                        fill
+                        sizes="(min-width: 1280px) 50vw, 100vw"
+                        alt={project.title}
+                        className="object-cover"
+                      />
                     </div>
                   </SwiperSlide>
                 );
