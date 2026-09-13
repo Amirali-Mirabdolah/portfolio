@@ -233,7 +233,7 @@ function Page() {
                       <Image
                         src={project.image}
                         fill
-                        sizes="(min-width: 1280px) 50vw, 100vw"
+                        unoptimized
                         alt={project.title}
                         className="object-cover"
                       />

@@ -16,9 +16,8 @@ function Photo() {
         <div className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten overflow-hidden rounded-full absolute">
           <Image
             src="/assets/amirali-e.png"
-            property="true"
-            quality={[100, 75]}
             fill
+            unoptimized
             alt="image"
             className="object-cover object-top"
           />
