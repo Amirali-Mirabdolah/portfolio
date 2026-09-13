@@ -1,8 +1,9 @@
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+import { cn } from "@/lib/utils";
 
 function Page() {
   return (
@@ -24,19 +25,17 @@ function Page() {
               with new technologies and better ways of building for the web.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2"
+              <a
+                href="/amirali-mirabdolah-05.pdf"
+                download
+                className={cn(
+                  buttonVariants({ variant: "outline", size: "lg" }),
+                  "uppercase flex items-center gap-2",
+                )}
               >
-                <a
-                  href="/amirali-mirabdolah-05.pdf"
-                  download
-                >
-                  Download Resume
-                </a>
+                <span>Download Resume</span>
                 <FiDownload className="text-xl" />
-              </Button>
+              </a>
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6"
