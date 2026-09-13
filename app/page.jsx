@@ -18,10 +18,10 @@ function Page() {
               <span>Amirali Mirabdolah</span>
             </h1>
             <p className="max-w-125 inline-flex mb-9 text-white/80">
-              I&apos;m a Front-End Developer with +2 years of experience building web
-              applications. I mainly work with React and Next.js, and I&apos;m always
-              learning and improving my skills to keep up with new technologies
-              and better ways of building for the web.
+              I&apos;m a Front-End Developer with +2 years of experience
+              building web applications. I mainly work with React and Next.js,
+              and I&apos;m always learning and improving my skills to keep up
+              with new technologies and better ways of building for the web.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button
@@ -29,7 +29,12 @@ function Page() {
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                <span>Download Resume</span>
+                <a
+                  href="/amirali-mirabdolah-05.pdf"
+                  download
+                >
+                  Download Resume
+                </a>
                 <FiDownload className="text-xl" />
               </Button>
               <div className="mb-8 xl:mb-0">
