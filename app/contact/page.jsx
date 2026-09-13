@@ -38,9 +38,11 @@ function page() {
         <div className="flex flex-col xl:flex-row gap-9">
           <div className="xl:w-[54%] order-2 xl:order-0">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-              <h3 className="text-4xl text-accent">Let's Work Together</h3>
+              <h3 className="text-4xl text-accent">
+                Let&apos;s Work Together
+              </h3>
               <p className="text-white/60">
-                I’m looking for a collaborative environment where I can learn
+                I&apos;m looking for a collaborative environment where I can learn
                 from others, share my knowledge, and continuously grow while
                 contributing to meaningful projects and a strong team.
               </p>

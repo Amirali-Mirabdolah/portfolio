@@ -4,7 +4,7 @@ import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
-function page() {
+function Page() {
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -12,14 +12,14 @@ function page() {
           <div className="text-center xl:text-left order-2 xl:order-0">
             <span className="text-xl">Front-End Developer</span>
             <h1 className="mb-6">
-              Hello i'm
+              Hello I&apos;m
               <br />
               <span className="text-accent">Seyed</span>{" "}
               <span>Amirali Mirabdolah</span>
             </h1>
             <p className="max-w-125 inline-flex mb-9 text-white/80">
-              I'm a Front-End Developer with +2 years of experience building web
-              applications. I mainly work with React and Next.js, and I'm always
+              I&apos;m a Front-End Developer with +2 years of experience building web
+              applications. I mainly work with React and Next.js, and I&apos;m always
               learning and improving my skills to keep up with new technologies
               and better ways of building for the web.
             </p>
@@ -51,4 +51,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

@@ -132,7 +132,7 @@ const projects = [
   },
 ];
 
-function page() {
+function Page() {
   const [project, setProject] = useState(projects[0]);
   const handleSlideChange = (swiper) => {
     const currentIndex = swiper.activeIndex;
@@ -254,4 +254,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
