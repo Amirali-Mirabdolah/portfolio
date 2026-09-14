@@ -11,16 +11,18 @@ const info = [
     icon: <FaPhoneAlt />,
     title: "Phone",
     description: "+98 903 78 919 88",
+    href: "tel:+989037891988",
   },
   {
     icon: <FaEnvelope />,
     title: "Gmail",
     description: "amiralimirabdolah@gmail.com",
+    href: "mailto:amiralimirabdolah@gmail.com",
   },
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    description: "Tehran, Rudehen",
+    description: "Tehran",
   },
 ];
 
@@ -79,18 +81,33 @@ function page() {
           <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-0 mb-8 xl:mb-0">
             <ul className="flex flex-col gap-10">
               {info.map((item, index) => {
-                return (
-                  <li
-                    key={index}
-                    className="flex items-center gap-6"
-                  >
+                const content = (
+                  <>
                     <div className="size-13 xl:size-18 bg-[#27272c] text-accent rounded-md flex items-center justify-center">
                       <div className="text-7 ">{item.icon}</div>
                     </div>
                     <div className="flex-1">
                       <p className="text-white/60">{item.title}</p>
-                      <h3 className="text-xl">{item.description}</h3>
+                      <h3 className="text-[16px]">{item.description}</h3>
                     </div>
+                  </>
+                );
+
+                return (
+                  <li
+                    key={index}
+                    className="flex items-center gap-6"
+                  >
+                    {item.href ? (
+                      <a
+                        href={item.href}
+                        className="flex items-center gap-6 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                      >
+                        {content}
+                      </a>
+                    ) : (
+                      content
+                    )}
                   </li>
                 );
               })}
