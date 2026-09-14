@@ -236,6 +236,7 @@ function Page() {
                         alt={project.title}
                         sizes="(max-width: 1279px) 100vw, 50vw"
                         className="object-cover"
+                        unoptimized
                       />
                     </div>
                   </SwiperSlide>
