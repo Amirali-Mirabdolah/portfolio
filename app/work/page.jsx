@@ -19,6 +19,32 @@ const projects = [
   {
     num: "01",
     category: "frontend",
+    title: "coffee",
+    description:
+      "A frontend project built to practice and explore Tailwind CSS, focusing on responsive layouts and utility-first styling.",
+    stack: [{ name: "Tailwind CSS" }],
+    image: "/assets/work/coffeep.png",
+    live: "https://coffee-eta-green.vercel.app/",
+    github: "https://github.com/Amirali-Mirabdolah/coffee",
+    isCompleted: true,
+    isVibeCoding: false,
+  },
+  {
+    num: "02",
+    category: "frontend",
+    title: "BIT",
+    description:
+      "A production PWA payment application I worked on during my time at Tejarat Electronic Taban Company. Built with React and Material UI, the application delivers a seamless web-based payment experience similar to popular payment platforms.",
+    stack: [{ name: "JavaScript" }, { name: "React.js" }, { name: "MUI" }],
+    image: "/assets/work/bitp.png",
+    live: "https://bit.omidpayment.ir",
+    github: "",
+    isCompleted: false,
+    isVibeCoding: false,
+  },
+  {
+    num: "03",
+    category: "frontend",
     title: "emy style",
     description:
       "An e-commerce website built with React and Tailwind CSS, featuring React Query for data fetching and Redux for state management.",
@@ -31,32 +57,6 @@ const projects = [
     live: "https://emy-style-01.vercel.app/",
     github: "https://github.com/Amirali-Mirabdolah/emy-style",
     isCompleted: true,
-    isVibeCoding: false,
-  },
-  {
-    num: "02",
-    category: "frontend",
-    title: "coffee",
-    description:
-      "A frontend project built to practice and explore Tailwind CSS, focusing on responsive layouts and utility-first styling.",
-    stack: [{ name: "Tailwind CSS" }],
-    image: "/assets/work/coffeep.png",
-    live: "https://coffee-eta-green.vercel.app/",
-    github: "https://github.com/Amirali-Mirabdolah/coffee",
-    isCompleted: true,
-    isVibeCoding: false,
-  },
-  {
-    num: "03",
-    category: "frontend",
-    title: "BIT",
-    description:
-      "A production PWA payment application I worked on during my time at Tejarat Electronic Taban Company. Built with React and Material UI, the application delivers a seamless web-based payment experience similar to popular payment platforms.",
-    stack: [{ name: "JavaScript" }, { name: "React.js" }, { name: "MUI" }],
-    image: "/assets/work/bitp.png",
-    live: "https://bit.omidpayment.ir",
-    github: "",
-    isCompleted: false,
     isVibeCoding: false,
   },
   {
