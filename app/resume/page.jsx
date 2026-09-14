@@ -14,11 +14,12 @@ import {
   FaBootstrap,
   FaCss3,
   FaFigma,
+  FaGitAlt,
   FaHtml5,
   FaJs,
   FaReact,
 } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import { SiMui, SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { calculateAge } from "@/lib/calculateAge";
 
 const about = {
@@ -31,13 +32,18 @@ const about = {
       fieldValue: "Seyed Amirali Mirabdolah",
     },
     {
-      fieldName: "Phone",
-      fieldValue: "+98 903 78 919 88",
-    },
-    {
       fieldName: "Gmail",
       fieldValue: "amiralimirabdolah@gmail.com",
     },
+    {
+      fieldName: "Military Service Status",
+      fieldValue: "Educational Exemption",
+    },
+    {
+      fieldName: "Phone",
+      fieldValue: "+98 903 78 919 88",
+    },
+
     {
       fieldName: "Nationality",
       fieldValue: "Iranian",
@@ -45,10 +51,6 @@ const about = {
     {
       fieldName: "Age",
       fieldValue: calculateAge("2002"),
-    },
-    {
-      fieldName: "Military Service Status",
-      fieldValue: "Educational Exemption",
     },
   ],
 };
@@ -110,13 +112,17 @@ const skills = {
       name: "JavaScript",
     },
     {
-      icon: <FaBootstrap />,
-      name: "Bootstrap",
+      icon: <SiTypescript />,
+      name: "TypeScript",
     },
-    // {
-    //   icon: <MaterialUiIcon/>,
-    //   name: "MUI",
-    // },
+    {
+      icon: <SiMui />,
+      name: "Material UI",
+    },
+    {
+      icon: <FaGitAlt />,
+      name: "GIT",
+    },
     {
       icon: <FaReact />,
       name: "React.js",
@@ -268,15 +274,15 @@ function page() {
                 <p className="max-w-150 text-white/60 mx-auto xl:mx-0">
                   {about.description}
                 </p>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 max-w-195 gap-y-6 mx-auto xl:mx-0">
+                <ul className="grid grid-cols-1 xl:grid-cols-2 max-w-250 gap-y-6 xl:gap-x-4 mx-auto xl:mx-0">
                   {about.info.map((item, index) => {
                     return (
                       <li
                         key={index}
-                        className="flex items-center justify-center xl:justify-start gap-3"
+                        className="flex flex-col items-center justify-center xl:flex-row xl:justify-start gap-3 bg-[#232329] rounded-lg p-3"
                       >
                         <span className="text-white/60">{item.fieldName}</span>
-                        <span className="text-xl">{item.fieldValue}</span>
+                        <span className="text-[16px]">{item.fieldValue}</span>
                       </li>
                     );
                   })}
