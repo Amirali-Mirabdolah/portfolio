@@ -6,7 +6,7 @@ const stats = [
   { num: 2, text: "Years of Experience" },
   { num: 5, text: "Projects Completed" },
   { num: 8, text: "Core Technologies" },
-  { num: 200, text: "Code Commits" },
+  { num: 400, text: "Code Commits" },
 ];
 
 function Stats() {

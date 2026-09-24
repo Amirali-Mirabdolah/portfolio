@@ -4,7 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { motion } from "framer-motion";
-import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import {
+  FaArrowRight,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+} from "react-icons/fa";
 
 const info = [
   {
@@ -40,13 +45,11 @@ function page() {
         <div className="flex flex-col xl:flex-row gap-9">
           <div className="xl:w-[54%] order-2 xl:order-0">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-              <h3 className="text-4xl text-accent">
-                Let&apos;s Work Together
-              </h3>
+              <h3 className="text-4xl text-accent">Let&apos;s Work Together</h3>
               <p className="text-white/60">
-                I&apos;m looking for a collaborative environment where I can learn
-                from others, share my knowledge, and continuously grow while
-                contributing to meaningful projects and a strong team.
+                I&apos;m looking for a collaborative environment where I can
+                learn from others, share my knowledge, and continuously grow
+                while contributing to meaningful projects and a strong team.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
                 <Input
@@ -78,7 +81,7 @@ function page() {
               </Button>
             </form>
           </div>
-          <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-0 mb-8 xl:mb-0">
+          <div className="flex-1 flex items-center order-1 xl:order-0 mb-8 xl:mb-0">
             <ul className="flex flex-col gap-10">
               {info.map((item, index) => {
                 const content = (
@@ -90,6 +93,11 @@ function page() {
                       <p className="text-white/60">{item.title}</p>
                       <h3 className="text-[16px]">{item.description}</h3>
                     </div>
+                    {item.href && (
+                      <div className="md:hidden text-accent">
+                        <FaArrowRight />
+                      </div>
+                    )}
                   </>
                 );
 
@@ -101,7 +109,7 @@ function page() {
                     {item.href ? (
                       <a
                         href={item.href}
-                        className="flex items-center gap-6 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                        className="flex w-full items-center justify-between gap-6 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                       >
                         {content}
                       </a>
